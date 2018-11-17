@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name OLIMEX_IC-FP)(type KiCad)(uri ${KICAD_USER_DIR}/Footprints/OLIMEX_IC-FP.pretty)(options "")(descr ""))
+  (lib (name AA055A)(type KiCad)(uri ${KICAD_USER_DIR}/Footprints/AA055A.pretty)(options "")(descr ""))
+  (lib (name VIA)(type KiCad)(uri "${KICAD_USER_DIR}/Projects/RTL8723BS BoB/VIA.pretty")(options "")(descr ""))
+)

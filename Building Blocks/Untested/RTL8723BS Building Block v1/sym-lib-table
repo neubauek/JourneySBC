@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name OLIMEX_IC)(type Legacy)(uri ${KICAD_USER_DIR}/Libraries/OLIMEX/OLIMEX_IC.lib)(options "")(descr ""))
+  (lib (name AA055A)(type Legacy)(uri ${KICAD_USER_DIR}/Libraries/AA055A/AA055A.lib)(options "")(descr ""))
+)
