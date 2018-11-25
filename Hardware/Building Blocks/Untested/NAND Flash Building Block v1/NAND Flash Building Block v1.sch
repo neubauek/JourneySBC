@@ -1,0 +1,456 @@
+EESchema Schematic File Version 4
+LIBS:NAND Flash Building Block v1-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L H27UCG8T2ETR-BC:H27UCG8T2ETR-BC(TSOP48) U1
+U 1 1 5BF44693
+P 5150 3900
+F 0 "U1" H 5150 5565 50  0000 C CNN
+F 1 "H27UCG8T2ETR-BC(TSOP48)" H 5150 5474 50  0000 C CNN
+F 2 "OLIMEX_IC-FP:TSOP48" H 5220 4050 20  0001 C CNN
+F 3 "" H 5050 3900 60  0000 C CNN
+	1    5150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Counter_Clockwise J2
+U 1 1 5BF44860
+P 8250 3500
+F 0 "J2" H 8300 4117 50  0000 C CNN
+F 1 "Conn_02x10_Counter_Clockwise" H 8300 4026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 8250 3500 50  0001 C CNN
+F 3 "~" H 8250 3500 50  0001 C CNN
+	1    8250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2500 4300 2500
+Wire Wire Line
+	4750 2600 4300 2600
+Wire Wire Line
+	4750 2700 4300 2700
+Wire Wire Line
+	4750 2800 4300 2800
+Wire Wire Line
+	4750 2900 4300 2900
+Wire Wire Line
+	4750 3000 4300 3000
+Wire Wire Line
+	4750 3100 4300 3100
+Wire Wire Line
+	4750 3200 4300 3200
+Wire Wire Line
+	4750 3700 4300 3700
+Wire Wire Line
+	4750 3800 4300 3800
+Wire Wire Line
+	4750 3900 4300 3900
+Wire Wire Line
+	4750 4000 4300 4000
+Wire Wire Line
+	4750 4700 4300 4700
+Wire Wire Line
+	4750 5300 4300 5300
+Text Label 4300 2500 0    50   ~ 0
+IO0
+Text Label 4300 2600 0    50   ~ 0
+IO1
+Text Label 4300 2700 0    50   ~ 0
+IO2
+Text Label 4300 2800 0    50   ~ 0
+IO3
+Text Label 4300 2900 0    50   ~ 0
+IO4
+Text Label 4300 3000 0    50   ~ 0
+IO5
+Text Label 4300 3100 0    50   ~ 0
+IO6
+Text Label 4300 3200 0    50   ~ 0
+IO7
+Wire Wire Line
+	8050 3100 7700 3100
+Wire Wire Line
+	8050 3300 7700 3300
+Wire Wire Line
+	8050 3500 7700 3500
+Wire Wire Line
+	8050 3600 7700 3600
+Wire Wire Line
+	8050 3700 7700 3700
+Wire Wire Line
+	8050 3800 7700 3800
+Wire Wire Line
+	8050 3900 7700 3900
+Wire Wire Line
+	8050 4000 7700 4000
+Wire Wire Line
+	8550 3100 8950 3100
+Wire Wire Line
+	8550 3200 8950 3200
+Wire Wire Line
+	8550 3300 8950 3300
+Wire Wire Line
+	8550 3400 8950 3400
+Wire Wire Line
+	8550 3500 8950 3500
+Wire Wire Line
+	8550 3600 8950 3600
+Wire Wire Line
+	8550 3700 8950 3700
+Wire Wire Line
+	8550 3800 8950 3800
+Wire Wire Line
+	8550 3900 8950 3900
+Wire Wire Line
+	8550 4000 8950 4000
+Text Label 8950 3100 2    50   ~ 0
++3V3
+Text Label 8950 3200 2    50   ~ 0
++3V3
+Text Label 7700 3100 0    50   ~ 0
+IO7
+Text Label 7700 3300 0    50   ~ 0
+IO6
+Text Label 7700 3500 0    50   ~ 0
+IO5
+Text Label 7700 3700 0    50   ~ 0
+IO4
+Text Label 7700 3900 0    50   ~ 0
+IO3
+Text Label 8950 4000 2    50   ~ 0
+IO2
+Text Label 8950 3800 2    50   ~ 0
+IO1
+Text Label 8950 3600 2    50   ~ 0
+IO0
+Text Label 8950 3300 2    50   ~ 0
+GND
+Text Label 8950 3400 2    50   ~ 0
+GND
+Text Label 7700 3600 0    50   ~ 0
+CLE
+Text Label 7700 3800 0    50   ~ 0
+ALE
+Text Label 7700 4000 0    50   ~ 0
+RB
+Text Label 8950 3900 2    50   ~ 0
+WE
+Text Label 8950 3700 2    50   ~ 0
+RE
+Text Label 8950 3500 2    50   ~ 0
+CE
+Text Label 4300 4000 0    50   ~ 0
+CLE
+Text Label 4300 3900 0    50   ~ 0
+ALE
+Text Label 4300 3700 0    50   ~ 0
+WE
+Text Label 4300 3800 0    50   ~ 0
+RE
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5BF4BD90
+P 3400 4650
+F 0 "#PWR0101" H 3400 4500 50  0001 C CNN
+F 1 "+3V3" H 3415 4823 50  0000 C CNN
+F 2 "" H 3400 4650 50  0001 C CNN
+F 3 "" H 3400 4650 50  0001 C CNN
+	1    3400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR0102
+U 1 1 5BF4BE80
+P 3400 5350
+F 0 "#PWR0102" H 3400 5100 50  0001 C CNN
+F 1 "GND" H 3405 5177 50  0000 C CNN
+F 2 "" H 3400 5350 60  0000 C CNN
+F 3 "" H 3400 5350 60  0000 C CNN
+	1    3400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BF4C21C
+P 3850 5000
+F 0 "C2" H 3965 5046 50  0000 L CNN
+F 1 "0.1uF" H 3965 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3888 4850 50  0001 C CNN
+F 3 "~" H 3850 5000 50  0001 C CNN
+	1    3850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BF4C288
+P 3400 5000
+F 0 "C1" H 3515 5046 50  0000 L CNN
+F 1 "0.1uF" H 3515 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 4850 50  0001 C CNN
+F 3 "~" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4800 3850 4850
+Wire Wire Line
+	3850 4800 4300 4800
+Wire Wire Line
+	3850 4800 3400 4800
+Wire Wire Line
+	3400 4800 3400 4850
+Connection ~ 3850 4800
+Wire Wire Line
+	4300 4700 4300 4800
+Connection ~ 4300 4800
+Wire Wire Line
+	4300 4800 4750 4800
+Wire Wire Line
+	3850 5200 3850 5150
+Wire Wire Line
+	3850 5200 4300 5200
+Wire Wire Line
+	3850 5200 3400 5200
+Wire Wire Line
+	3400 5200 3400 5150
+Connection ~ 3850 5200
+Wire Wire Line
+	3400 5200 3400 5350
+Connection ~ 3400 5200
+Wire Wire Line
+	3400 4800 3400 4650
+Connection ~ 3400 4800
+Wire Wire Line
+	4300 5300 4300 5200
+Connection ~ 4300 5200
+Wire Wire Line
+	4300 5200 4750 5200
+$Comp
+L Device:R R4
+U 1 1 5BF52082
+P 3700 3800
+F 0 "R4" V 3907 3800 50  0000 C CNN
+F 1 "R0" V 3816 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 3800 50  0001 C CNN
+F 3 "~" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BF522A1
+P 3700 3450
+F 0 "R3" V 3907 3450 50  0000 C CNN
+F 1 "10K" V 3816 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 3450 50  0001 C CNN
+F 3 "~" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 3800 3050 3800
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5BF5400E
+P 3050 3450
+F 0 "#PWR0103" H 3050 3300 50  0001 C CNN
+F 1 "+3V3" H 3065 3623 50  0000 C CNN
+F 2 "" H 3050 3450 50  0001 C CNN
+F 3 "" H 3050 3450 50  0001 C CNN
+	1    3050 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 3450 3050 3450
+Wire Wire Line
+	3850 3450 3950 3450
+Wire Wire Line
+	3850 3800 3950 3800
+Text Label 3050 3800 0    50   ~ 0
+CE
+$Comp
+L Device:R R2
+U 1 1 5BF58E84
+P 3700 3050
+F 0 "R2" V 3907 3050 50  0000 C CNN
+F 1 "R0" V 3816 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 3050 50  0001 C CNN
+F 3 "~" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BF58E8B
+P 3700 2700
+F 0 "R1" V 3907 2700 50  0000 C CNN
+F 1 "10K" V 3816 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 2700 50  0001 C CNN
+F 3 "~" H 3700 2700 50  0001 C CNN
+	1    3700 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 3050 3050 3050
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5BF58E93
+P 3050 2700
+F 0 "#PWR0104" H 3050 2550 50  0001 C CNN
+F 1 "+3V3" H 3065 2873 50  0000 C CNN
+F 2 "" H 3050 2700 50  0001 C CNN
+F 3 "" H 3050 2700 50  0001 C CNN
+	1    3050 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 2700 3050 2700
+Wire Wire Line
+	3850 2700 3950 2700
+Wire Wire Line
+	3850 3050 3950 3050
+Text Label 3050 3050 0    50   ~ 0
+RB
+Wire Wire Line
+	3950 2700 3950 2850
+Wire Wire Line
+	3950 3450 3950 3600
+Wire Wire Line
+	4750 3600 3950 3600
+Connection ~ 3950 3600
+Wire Wire Line
+	3950 3600 3950 3800
+Wire Wire Line
+	4750 3400 4100 3400
+Wire Wire Line
+	4100 3400 4100 2850
+Wire Wire Line
+	4100 2850 3950 2850
+Connection ~ 3950 2850
+Wire Wire Line
+	3950 2850 3950 3050
+$Comp
+L Device:R R5
+U 1 1 5BF682FE
+P 3950 4100
+F 0 "R5" H 4020 4146 50  0000 L CNN
+F 1 "10K" H 4020 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3880 4100 50  0001 C CNN
+F 3 "~" H 3950 4100 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5BF68677
+P 3650 3950
+F 0 "#PWR0105" H 3650 3800 50  0001 C CNN
+F 1 "+3V3" V 3665 4078 50  0000 L CNN
+F 2 "" H 3650 3950 50  0001 C CNN
+F 3 "" H 3650 3950 50  0001 C CNN
+	1    3650 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3950 3950 3950
+Wire Wire Line
+	3950 4250 3950 4300
+Wire Wire Line
+	3950 4300 4750 4300
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5BF6BB73
+P 2800 4400
+F 0 "J1" H 2720 4075 50  0000 C CNN
+F 1 "Conn_01x02" H 2720 4166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2800 4400 50  0001 C CNN
+F 3 "~" H 2800 4400 50  0001 C CNN
+	1    2800 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR0106
+U 1 1 5BF6BE35
+P 3100 4500
+F 0 "#PWR0106" H 3100 4250 50  0001 C CNN
+F 1 "GND" H 3105 4327 50  0000 C CNN
+F 2 "" H 3100 4500 60  0000 C CNN
+F 3 "" H 3100 4500 60  0000 C CNN
+	1    3100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4300 3000 4300
+Connection ~ 3950 4300
+Wire Wire Line
+	3000 4400 3100 4400
+Wire Wire Line
+	3100 4400 3100 4500
+$Comp
+L Device:R R6
+U 1 1 5BF6FA4D
+P 7950 4950
+F 0 "R6" V 7743 4950 50  0000 C CNN
+F 1 "330" V 7834 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7880 4950 50  0001 C CNN
+F 3 "~" H 7950 4950 50  0001 C CNN
+	1    7950 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BF6FBCB
+P 7300 4950
+F 0 "D1" H 7291 5166 50  0000 C CNN
+F 1 "LED" H 7291 5075 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 4950 50  0001 C CNN
+F 3 "~" H 7300 4950 50  0001 C CNN
+	1    7300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR0107
+U 1 1 5BF6FDC9
+P 6850 4950
+F 0 "#PWR0107" H 6850 4700 50  0001 C CNN
+F 1 "GND" V 6855 4822 50  0000 R CNN
+F 2 "" H 6850 4950 60  0000 C CNN
+F 3 "" H 6850 4950 60  0000 C CNN
+	1    6850 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5BF70104
+P 8450 4950
+F 0 "#PWR0108" H 8450 4800 50  0001 C CNN
+F 1 "+3V3" V 8465 5078 50  0000 L CNN
+F 2 "" H 8450 4950 50  0001 C CNN
+F 3 "" H 8450 4950 50  0001 C CNN
+	1    8450 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 4950 8100 4950
+Wire Wire Line
+	7800 4950 7450 4950
+Wire Wire Line
+	7150 4950 6850 4950
+Text Notes 6700 7750 0    79   ~ 0
+NAND Flash Building Block
+Text Notes 9850 7900 0    79   ~ 0
+v1
+$EndSCHEMATC
